@@ -198,6 +198,14 @@ st.subheader("Chat with the Content")
 # Display chat history
 render_chat_history()
 
+with st.sidebar:
+    st.markdown("""
+    ### Developed by: 
+    [*Siddhartha Pathak*](https://www.siddharthapathak.com.np) | 
+    [*Aniket*](https://www.linkedin.com/in/aniket-sah/) | 
+    [*Samir*](https://www.linkedin.com/in/samir-shah-231381311/)
+    """, unsafe_allow_html=True)
+
 # Chat input
 if st.session_state.url_processed:
     user_question = st.chat_input("Ask a question about the content...")
